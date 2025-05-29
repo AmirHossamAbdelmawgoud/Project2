@@ -1,0 +1,1009 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    perspective: 700px;
+background-color:#003964;
+}
+ul{margin: 10px 100px;}
+
+li{list-style-type: none;}
+.li_1 ,.li_2{
+display: inline;
+margin-right: 25px;
+padding:0px 5px;
+position: relative;
+color: #ffffff;
+
+}
+.li_sec1{margin-left: 410px;}
+
+.li_1::after{
+    content: "";
+    position: absolute;
+    width:2px;
+    height:0%;
+    bottom: 0;
+    left: 0;
+    background-color:#ffffff;;
+    opacity: 0;
+    padding: 0px 0.8px;
+}
+.li_1:hover::after{
+    width:0px;
+    height:100%;
+    opacity: 1;
+    transition: 1s;
+    padding: 0px 1.1px;
+}
+
+.li_1::before{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0%;
+    top: 0;
+    right: 0;
+    background-color:#ffffff;
+    opacity: 0;
+    padding: 0px 0.8px;
+}
+
+.li_1:hover::before{
+    width: 0px;
+    height:100%;
+    opacity: 1;
+    transition:1s;
+    padding: 0px 1.1px;
+} 
+.li_1 i{transition: 0.3s;}
+.li_1 i:hover{
+    transform:rotateY(180deg);
+    transition: 0.1s;
+    color: #0091ff;
+}
+
+.hr_1{
+    width: 100%;
+    margin: 5px 0;
+}
+
+a{ text-decoration: none;}
+
+img{
+    width: 100px;
+    height: 70px;
+    border-radius:50px;
+    margin:5px 0px 5px 200px;
+}
+.li_2{padding: 0px 5px 20px 5px;}
+.ul_2{
+    margin-top: -55px;
+    margin-left: 450px;
+}
+.lli_2{ margin-left:800px;}
+.kkk{
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.con{margin-left:110px;
+margin-right: 30px;}
+
+.circle_1{
+    width: 18px;
+    height:18px;
+    border-radius:9px;
+    text-align: center;
+    background-color:#0091ff;
+    color:  #ffffff;
+    margin: -51px 0px 0px 47px;
+    transition: 1s;
+}
+.r{
+    margin: -50px 0px 0px 850px;
+    width: 0px;
+    height: 0px;
+}
+.icon2{margin-right:17px;}
+
+.ul_2 .icon2:hover{color: #0091ff;}
+
+.r:hover .circle_1{
+    margin-top: -57px;
+    transition: 1s;
+}      
+
+.ul_2 .iction1::after{
+    content: "";
+    position: absolute;
+    width:0%;
+    height:3px;
+    top: 0;
+    left: 0;
+ background-color: white;
+     opacity: 0;
+    margin-top: -8px;
+}
+
+.ul_2 .iction1:hover::after{
+    width:100%;
+    height:3px;
+    opacity: 1;
+    transition: 0.5s;
+}
+.ul_2 .iction1:hover{color: #0091ff;}
+
+.ul_2 .iction1::before{
+    content: "";
+    position: absolute;
+    width:0%;
+    height:3px;
+    bottom: 0;
+    left: 0;
+ background-color: white;
+    opacity: 0;
+    margin-bottom:7px;
+}
+.ul_2 li:hover::before{
+    width:100%;
+    height:3px;
+    opacity: 1;
+    transition:0.5s;
+}
+.span_1,.span_2{
+    width: 3px;
+    height: 0px;
+ background-color: #ffffff;
+    display:inline;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.2s;
+    bottom: 649px;
+    top: 52px;     /* yمكان ال الاسبان علي محور ال */
+}
+.span_2{margin-left:-30.5px;} 
+.div_span:hover .span_2{
+    height:38.5px;
+    visibility: visible;
+ background-color: #ffffff;
+}
+.div_span:hover .span_1{
+    height:38.5px;
+    visibility: visible;
+}
+.span_1_0{margin-left:110px;}
+
+.biglist li{
+    margin-right: 5px;
+    margin-top: 100px;
+    color: #ffffff;
+}
+.biglist .a_1_biglist{margin: -12px 0px 0px 55px}
+.biglist:hover a{color: #0091ff;}
+.biglist a{color: #ffffff;}
+.biglist{
+    margin:-10px 0px 0px 835px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+}
+.smail_list{
+width: 0px;
+height: 0px;
+background-color: #003964a1;
+border-radius: 15px;
+margin: auto;
+margin-top: 20px;
+visibility: hidden;
+padding: 10px;
+transition:0.5s;
+opacity: 0;
+position: relative;
+direction: row;
+}
+.biglist:hover .smail_list{
+    visibility: visible;
+    opacity: 1;
+    width: 250px;
+height: 180px;
+}
+
+.smail_list li{
+opacity: 0;
+/* transition: 2s; */
+} 
+
+.biglist:hover .smail_list li{
+    margin: 0;
+opacity: 1;
+transition: 2s;
+}
+
+.divline{
+    width:40px;
+    height: 1px;
+  background-color: rgb(255, 255, 255);
+    margin: 4px 0px 7px 20px;
+}
+
+#id_hov{
+    transition: 0.01s;
+}
+
+
+.smail_list #id_hov:hover{
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+    transition: 0.01s;
+}
+.smail_list .li_sl{
+display: inline;
+margin-left: 0px;
+}
+.li_s2{ padding-right:100px;}
+.li_en{padding-right:80px;}
+.pp{padding-right:120px;}
+.icon1{
+    margin-left: -142px;
+    font-size: 10px;
+color: #015d9e;
+}
+
+.divline2{
+    margin-left: 177px;
+    margin-top: -6px;
+    width: 35px;
+        height: 1px;
+  background-color: white;
+}
+
+.li_s3{margin-left: -80px;}
+
+/* .li:hover{color:rgb(0, 255, 102)} */
+
+.span_1_1,.span_2_2,.span_3_3,.span_4_4{
+ background-color: #ffffff;
+    position: absolute;
+    transition: 0.5s;
+}
+.span_1_1,.span_2_2{
+    width: 3px;
+    height: 0px;
+bottom: -11.5;
+}
+.span_3_3,.span_4_4{
+    width:0px;
+    height: 3px;
+left:19;
+}
+.span_1_1{margin: -27px 0px 0px -29px;}
+
+.span_2_2{margin: -27px 0px 0px 47px;}
+
+.span_3_3{margin: -27px 0px 0px -26px;}
+
+.span_4_4{margin:10px 0px 0px -27px;}
+
+.biglist:hover .span_1_1{height: 40px;}
+
+.biglist:hover .span_2_2{height: 40px;}
+
+.biglist:hover .span_3_3{width: 75px;}
+
+.biglist:hover .span_4_4{width: 75px; }
+
+.Pergraph_1{
+ background-color: rgb(0, 80, 137);
+    color: aliceblue;
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+.Pergraph_1 span a{ 
+    color:rgb(212, 212, 212);}
+
+.line_1{ 
+    width: 70px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin:-10px 0px 0px 935px;
+    }
+    .bg_image{
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 79%;
+        animation-name: image_Home;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes image_Home{
+0%{        background-image: url(../images/pexels-pixabay-459402.jpg);
+}
+        25%{
+        background-image: url(../images/pexels-joel-super-188959-2315265.jpg);
+        }
+
+        50%{
+                background-image: url(../images/pexels-jerseypics-638698.jpg);
+
+        }
+    
+        75%{background-image: url(../images/pexels-aleksandr-sochnev-2149104692-30520096.jpg);
+ }
+    
+        100%{         background-image: url(../images/pexels-pixabay-76971.jpg);
+
+}
+
+
+    }
+    .Pergraph_2,.Pergraph_3{
+        color: rgb(255, 255, 255);
+        padding:200px 0px 0px 350px;
+        font-size: 35px;
+        font-family:monospace;
+        font-style:italic;
+    }
+    .Pergraph_3{
+        color: rgb(255, 255, 255);
+        padding:10px 0px 0px 280px;
+        font-size: 60px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .Pergraph_4{
+        padding:10px 0px 0px 310px;
+        color: rgb(255, 255, 255);
+        width: 800px;   
+    }
+    .button_1{
+        background-color:#003964;
+        color:#ffffff;
+        border-radius: 10px;
+        width: 120px;
+        height: 50px;
+        font-weight: 900;
+        margin:30px 0px 0px 450px;
+    }
+    .button_1:hover{
+        background-color: white;
+        color: #003964;
+    }
+    .Pergraph_1 span:hover{
+        letter-spacing: 2px;
+    }
+    .Pergraph_1 span::after{
+        content: "";
+        position: absolute;
+        width:65px;
+        height:3px;
+        background-color:rgb(255, 255, 255);
+        opacity: 1;
+        right: 500;
+        margin: 20px 10px 0px 0px;
+    }
+    
+    .Pergraph_1 span:hover::after{
+        margin: 20px 4px 0px 0px;
+        width:80px;
+        height:3px;
+        opacity: 1;
+        transition: 0.5s;
+        }
+        .icons_1_1{margin-top: -15px;}
+/****************************************************************************************************************************************************************/
+
+.page2{
+    width: 100%;
+    height: 80vh;
+    /* background-color: rgb(255, 255, 255); */
+    padding:100px 130px 0px 130px;
+    display: flex;
+}
+.parenr_page2{
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 400px;
+    margin-right: 10px;
+}
+.div_1{
+    background-image: url(../images/3d-travel-icon-with-airplane.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    box-shadow: 0px -80px 10px 0px #00000060 inset;
+    transition: 1s;
+}
+.image2_page2{ background-image: url(../images/8c343550-6d81-40ca-b8d0-9d64e9a6c193.jpg);}  
+.image3_page2{ background-image: url(../images/0d4c906e-c4ff-4e33-a127-ba1cd7d9a347.jpg);}  
+
+.div_1:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.p1,.p2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding:325px 100px 5px 145px;
+    transition: 1s;
+}
+.p2{
+    padding:30px 0px 0px 170px;
+    font-size: 15px;
+}
+.p3{
+    width: 70px;
+    height: 3px;
+    background-color:rgb(255, 255, 255);
+    margin: auto;
+    transition: 1s;
+}
+.div2_page2{
+    visibility: hidden;
+    transition: 1s;
+}
+.div_1:hover .div2_page2{
+    visibility: visible;
+    transition: 1s;
+    padding-bottom:55px;          /*1*/
+}
+.div_1:hover .p1{
+    padding-top: 260px;                  /*2*/
+    transition: 1s;
+}
+.div2_page2:hover .p2{
+    letter-spacing:3px;
+    margin:-5px 0px 0px -10px;
+}
+.div2_page2:hover .p3{
+    width: 87px;
+    transition: 1s;
+}
+
+/********************************************************************************************************************************************************/
+.page3{
+    width: 100%;
+    height: 90vh;
+    padding: 20px 50px;
+    position: relative;
+}
+.ul1_page3{
+    display: flex;
+    margin-left: 1100px;
+    color: white;
+}
+
+.ul1_page3 li{
+    margin-left: 25px;
+}
+.li_color_page3{color:  #0091ff;}
+.h1_page3{
+    font-size: 30px;
+    margin: -45px 0px 10px 0px;
+    color: white;
+}
+.p1_page3{
+    width: 55px;
+    height: 4px;
+    background-color: #0091ff;
+    margin:27px 0px 0px 1180px;
+}
+.hr_1_page3{
+    margin-right: 50px;
+     height: 2px;
+     background-color: rgb(255, 255, 255);
+}
+
+.parent_page3{
+padding: 30px 120px 0px 120px;
+display: flex;
+}
+.section1,.div_iction1{
+    transform-style: preserve-3d;
+    width: 280px;
+    height: 350px;
+    transition: 1s;
+    margin-right: 15px;
+    }
+.div_iction1{   
+     overflow: hidden;
+    transition:1.2s;
+}
+.div_1_page3,.div_2_page3{
+    position: absolute;
+    width: 280px;
+    height: 350px;
+    background-image:url(../images/image_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.div_1_page3{
+    z-index: 1;
+    transition:1.2s;
+    opacity: 1;
+}
+.div_2_page3{
+background-image:url(../images/3d-travel-icon-with-airplane_2.jpg);
+position: relative;
+} 
+.image_2_1_page3{background-image:url(../images/im_3.jpg);}
+.image_2_2_page3{background-image:url(../images/behnam-norouzi-H1jdfM5jUxM-unsplash.jpg);}
+.image_3_1_page3{background-image:url(../images/im_2.jpg);}
+.image_3_2_page3{background-image:url(../images/IMG-20250516-WA0011.jpg);}
+.image_4_1_page3{background-image:url(../images/IMG-20250516-WA0014.jpg);}
+.image_4_2_page3{background-image:url(../images/obi-gHApwF6pjTg-unsplash.jpg);}
+
+.div_iction1:hover .div_1_page3{
+    transition:1.2s;
+    opacity: 0;
+    transform: rotateY(180deg);
+z-index: 0;}
+
+
+.icons_div2_page3{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin: 320px 0px 0px 65px;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.icon_1_1_1{
+font-size: 27px;
+    padding: 8px 9.6px;
+    color: #0091ff;
+}
+.icon_1_1_1:hover{background-color:#003964;}
+
+.section1:hover .icons_div2_page3{
+opacity: 1;
+        margin-top: 285px;
+        transition: 1.5s;
+}
+
+.icons_page3{
+    width: 144px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.p2_page3{
+    padding:30px 0px 10px 50px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.span1_page3{
+    margin-left: 80px;
+    font-size: 18px;
+    color: rgb(133, 133, 133);
+}
+.del_1{padding-left: 10px;}
+.section1:hover .p2_page3{
+    color: #0091ff;
+}
+.section1:hover .span2_page3{
+    color: rgb(255, 255, 255);
+}
+.icon4,.icon5{
+    margin: -170px 0px 0px -30px;
+    color: #ffffff;
+    font-size: 25px;
+}
+.icon5{
+        margin: -170px 0px 0px 295px;
+}
+/********************************************************************************************************************************************/
+.page4{
+    width: 100%;
+    height: 50vh;
+}
+.p1_page4{
+    width:100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+.h1_page4{
+   margin-top:-170px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+.p2_page4{
+    color: #ffffff97;
+    font-size: 18px;
+    padding:45px 400px;
+    text-align: center;
+    line-height: 30px;
+}
+.p3_page4{
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/3918989.jpg);
+    background-size: cover;
+    border-radius: 40px;
+    margin: auto;
+}
+.p4_page,.p5_page{
+    margin:-65px 0px 0px 800px ;
+    font-weight: 900;
+    color:#ffffff;
+}
+.p5_page{
+    margin-top: 10px;
+    color: #ffffff89;
+}
+
+.icon6{
+    font-size: 30px;
+    margin:180px 0px 0px 150px;
+    color: #ffffff;
+}
+.icon7{margin-left:1200px;}
+/*****************************************************************************************************************************************************************/
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0px 100px;
+}
+
+.h1_page5{
+    text-align: center;
+    margin-top:50px;
+    color: #ffffff;
+}
+
+.page5 section{
+    position: relative;
+     width: 200px;
+    height: 300px;
+    transition: 1.5s;
+    margin: 100px 100px 0px 20px;
+}
+.div1_page5,.div2_page5{
+     width: 300px;
+background-image:url(../images/trading-stock-stock-market-business-graph-trading-investment-broker-stock-exchange-market.jpg) ;
+background-size: cover;
+background-position: center;
+    position: absolute;
+    height: 400px;
+}
+
+.div2_page5{
+background-image:url(../images/image_3.jpg) ;
+    height: 0px;
+    opacity: 0;
+     transition: 1.5s;
+}
+.im_1_1{background-image: url(../images/stock-market-cryptocurrency-concept-stock-trading-laptop.jpg);}
+.im_1_2{background-image: url(../images/IMG-20250516-WA0008.jpg);}
+.im_2_1{background-image: url(../images/javier-esteban-8zcp9L0zNhg-unsplash.jpg);}
+.im_2_2{background-image: url(../images/pexels-alesiakozik-6771985.jpg);}
+.im_3_1{background-image: url(../images/IMG-20250516-WA0056.jpg);}
+.im_3_2{background-image: url(../images/pexels-alesiakozik-6771631.jpg);}
+
+
+.icon3{
+    font-size: 27px;
+    padding: 8px 8.6px;
+    color:#005393
+}
+.icon3:hover{
+    background-color:#0091ff;
+    color:aliceblue
+}
+
+.page5 section:hover .div2_page5 {
+        opacity: 1;
+        width: 300px;
+        height: 400px;
+    transition: 1.5s;
+}
+
+.icons_page3{
+    margin: 355px 0px 0px 80px;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.page5 section:hover .icons_page3{
+    visibility: visible;
+    margin-top:330px ;
+    transition: 1s;
+}
+
+.p1_page5{
+    margin:400px 0px 0px 15px;
+    color:#ffffff
+}
+.page5 section:hover .p1_page5{ color:#0091ff}
+
+.p4_page5{margin-left: 10px;}
+.page5 section:hover .p4_page5{ color: rgb(255, 255, 255);}
+.icon9{
+    font-size: 30px;
+margin: 300px 0px 0px 1300px;
+color: #ffffff;
+}
+.icon10{margin-left: -1300px;}
+
+
+/************************************************************************************************************************************************************/
+
+.section6{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 80px;
+    display: flex;
+}
+.contaner_page6{
+    padding-top: 30px;
+    width: 370px;
+    height: 450px;
+    margin-left: 70px;
+}
+
+.div1_page6{
+    width: 370px;
+    height: 450px;
+    background-image: url(../images/trading-stock-stock-market-trading-investment-broker-stock-exchange-market.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.image_p6_1{ background-image: url(../images/kamil-molendys-8Y_EuWYU5uQ-unsplash.jpg);}
+.image_p6_2{background-image: url(../images/yucel-moran-onSPwKgLltg-unsplash.jpg);}
+
+.div1_page6:hover{
+    transform: scale(1.05,1.05);
+}
+.p1_page6{
+    margin: 20px 0px;
+    color:#ffffffa5;
+}
+.p2_page6{
+    width: 370px;
+    text-align: center;
+    font-size: 25px;
+    color:#ffffff;
+}
+.contaner_page6:hover .p2_page6{color:#9cd4ff;}
+.p3_page6{
+    line-height: 25px;
+        color:#ffffffbb;
+}
+
+.div2_page6{
+    margin-left: 10px;
+   width: 120px;
+}
+.p5_page6{
+    color:#707070;
+    font-size: 20px;
+        font-weight: bold;
+}
+.p6_page6{
+    background-color:#ffffff9d;
+    height: 2px;
+    width: 90px;
+}
+.div2_page6:hover .p5_page6{
+    font-size: 22px;
+    margin-left: -4px;
+}
+
+.div2_page6:hover .p6_page6{
+    width: 100px;
+    margin-left: -4px;
+}
+
+
+/***************************************************************************************************************************/
+
+.section7{
+    width: 100%;
+    height:50vh;
+    padding: 100px;
+}
+.h3_2_page7{
+    margin-top:-103px;
+    padding-bottom: 42.5px;
+background-color:#003964;
+}
+.contaner_section7{
+    position: absolute;
+     width: 50px;
+    height: 70px;
+    margin-top:-5px;
+}
+.icon11{
+    position: absolute;
+    font-size: 50px;
+    color:rgba(255, 255, 255, 0.533);
+    transition: 0.1s;
+}
+.icon12{
+ position: absolute;
+color:#ffffff;
+font-size: 50px;
+margin-top: 52px;
+}
+
+
+.contaner_section7:hover .icon12{
+    visibility: visible;
+    margin-top:0px;
+    transition: 0.1s;
+}
+
+.h3_1_page7{
+    width: 250px;
+    height: 50px;
+    padding-top:10px;
+    margin-left: -35px;
+    color: #ffffff;
+}
+.div10_page7{
+    position: absolute;
+    width: 200px;
+    height: 70px;
+background-color:#003964;
+    z-index: 11;
+    margin:45px 0px 0px -10px;
+}
+
+.contaner_section7:hover .icon0{
+        visibility: visible;
+        margin-top:-50px;
+        transition: 0.1s;
+}
+.h4_1_page7{
+    margin:-25px 0px 0px -35px;
+    color:#ffffffaf
+}
+.par_1_page7{margin-left: 400px;}
+.par_2_page7{margin-left: 800px;}
+.par_3_page7{margin-left: 1200px;}
+
+.con1_page7{margin-left: 10px;}
+
+/*********************************************************************************************************************************************/
+
+.section8{
+    width: 100%;
+    height: 80vh;
+    padding: 70px 100px 30px 100px;
+    color: aliceblue;
+}
+.ol_group{
+    display: flex;
+padding-left: 250px;
+margin-bottom: 20px;}
+.div1_section8{ display: flex;
+margin-bottom: 20px;}
+
+.h2_1_page8{margin-bottom: 20px;}
+
+[type="email"],[type="button"]{
+        height: 60px;
+    font-size: 20px;
+}
+
+[type="email"]{
+    width: 500px;
+    margin-left: 100px;
+    padding: 0px 30px;
+        font-weight: bold;
+}
+[type="button"]{
+    color: aliceblue;
+width: 150px;
+background-color:#005393;
+margin-left: 30px;
+transition:0.5s;
+}
+.icons_page8 i{
+    font-size: 22px;
+    margin-right: 10px;
+    color: rgb(152, 152, 152);
+}
+.icons_page8{margin:20px 0px 0px 110px;}
+
+[type="button"]:hover{
+transform:scale(1.1,1.1);
+transition:0.5s;
+}
+
+.icons_page8 i:hover{color:rgb(255, 255, 255) ;}
+/* .p8_page8{margin-top:15px;} */
+
+[type="image"]{
+    width: 60px;
+    height:60px;
+    margin-top: 50px;
+}
+.ou1_page8{
+    margin: -80px 150px 0px 0px;
+}   
+.ou1_page8 li{
+line-height: 35px;
+color: rgb(220, 220, 220);
+transition: 1s;
+margin-bottom: 10px;
+width: 130px;
+}
+
+.li_par_page8{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+/* .p8_page8{
+    height: 1px;
+    color: rgb(254, 255, 255);
+    margin: -8px 0px 0px -3px;
+width:130px;
+    visibility: hidden;
+} */
+
+.li_page8:hover{
+font-size:18px;
+transition: 1s;
+}
+/* .ppp_1{width: 95px;}
+.ppp{ width: 55px;
+   margin-left:-3;
+} */
+.li_page8:hover{
+text-decoration: underline;    
+}
+
+    .p1_page8{
+        margin-bottom: 20px;
+    }
+.span1_page8{
+margin: 0px 300px;
+display: flex;
+word-spacing: 2px}
+.icon14{
+    color: aliceblue;
+    margin: 0px 5px;
+    font-size: 20px;
+    animation-name: icons;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icons{
+    10%{color:rgb(0, 0, 0)}
+    100%{color:red}
+}
+/* .p11{
+    margin: 2px 0px 0px 2px;
+} */
+.li_end{
+    color:#0091ff;
+    margin-left:5px;
+}
+.li_end:hover{
+letter-spacing: 1px;
+}
+
+
+
+
+
+
+
